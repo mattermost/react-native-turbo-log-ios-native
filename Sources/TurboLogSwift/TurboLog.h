@@ -3,11 +3,11 @@
 NS_ASSUME_NONNULL_BEGIN
 
 typedef NS_ENUM(NSInteger, TurboLogLevel) {
-    TurboLogLevelDebug,
-    TurboLogLevelInfo,
-    TurboLogLevelWarning,
-    TurboLogLevelError
-};
+    TurboLogLevelDebug = 0,
+    TurboLogLevelInfo = 1,
+    TurboLogLevelWarning = 2,
+    TurboLogLevelError = 3
+} NS_SWIFT_NAME(TurboLogLevel);
 
 @interface TurboLog : NSObject
 
