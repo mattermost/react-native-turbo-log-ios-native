@@ -17,7 +17,6 @@ Pod::Spec.new do |s|
 
   s.module_name = 'TurboLogIOSNative'
   s.header_dir = 'TurboLogIOSNative'
-  s.module_map = 'Sources/TurboLogSwift/module.modulemap'
 
 
   s.frameworks = 'Foundation'  
