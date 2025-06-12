@@ -1,5 +1,16 @@
 import Foundation
 
+public enum TurboLoggerLevel: Int, CaseIterable {
+    case debug = 0
+    case info = 1
+    case warning = 2
+    case error = 3
+
+    var objcLevel: TurboLogLevel {
+        return TurboLogLevel(rawValue: self.rawValue) ?? TurboLogLevel(rawValue: 0)!
+    }
+}
+
 public class TurboLogger {
     public static func configure(
         dailyRolling: Bool,
@@ -28,7 +39,7 @@ public class TurboLogger {
         return TurboLog.getFilePaths()
     }
     
-    public static func write(level: TurboLogLevel, message: Any...) {
-        TurboLog.write(with: level, message: message)
+    public static func write(level: TurboLoggerLevel, message: Any...) {
+        TurboLog.write(with: level.objcLevel, message: message)
     }
 }
