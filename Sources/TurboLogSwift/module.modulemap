@@ -1,4 +1,4 @@
-module TurboLogSwift {
+module TurboLogIOSNative {
     header "TurboLogSwift-Bridging-Header.h"
     export *
 }
