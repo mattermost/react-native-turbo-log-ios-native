@@ -1,4 +1,11 @@
-module TurboLogIOSNative {
-    header "TurboLogSwift-Bridging-Header.h"
+framework module TurboLogIOSNative {
+    umbrella header "TurboLogIOSNative.h"
+    
     export *
+    module * { export * }
+    
+    explicit module Swift {
+        header "TurboLogSwift-Bridging-Header.h"
+        requires objc
+    }
 }
