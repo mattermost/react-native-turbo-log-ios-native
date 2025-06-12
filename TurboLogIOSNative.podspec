@@ -15,6 +15,11 @@ Pod::Spec.new do |s|
   s.source_files = 'Sources/TurboLogSwift/**/*'
   s.public_header_files = 'Sources/TurboLogSwift/**/*.h'
 
+  s.module_name = 'TurboLogIOSNative'
+  s.header_dir = 'TurboLogIOSNative'
+  s.module_map = 'Sources/TurboLogSwift/module.modulemap'
+
+
   s.frameworks = 'Foundation'  
   s.dependency 'CocoaLumberjack', '~> 3.8.5'
 end
