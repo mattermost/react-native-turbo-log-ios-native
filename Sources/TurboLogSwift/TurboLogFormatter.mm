@@ -15,7 +15,7 @@ NSDateFormatter* dateFormatter;
 - (instancetype)init {
     if (self = [super init]) {
         dateFormatter = [[NSDateFormatter alloc] init];
-        dateFormatter.dateFormat = @"yyyy/MM/dd HH:mm:ss:SSS";
+        dateFormatter.dateFormat = @"yyyy/MM/dd HH:mm:ss:SSS Z";
     }
     return self;
 }
